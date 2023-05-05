@@ -91,7 +91,7 @@ export default {
   },
   methods: {
     fetch () {
-      axios.get('http://anharrum.site/api/nomera/' + this.$route.params.id)
+      axios.get('https://localhost:8081/api/nomera/' + this.$route.params.id)
         .then(response => {
           console.log('+++ SUCCESS +++')
           this.nomera = response.data.values.rows
@@ -102,7 +102,7 @@ export default {
         })
     },
     deletStud (id) {
-      axios.delete(`http://anharrum.site/api/nomera/${id}`)
+      axios.delete(`https://localhost:8081/api/nomera/${id}`)
         .then(res => {
           console.log('Deleted')
           this.fetch()

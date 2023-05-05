@@ -81,7 +81,7 @@ export default {
   },
   methods: {
     fetch () {
-      axios.get('http://anharrum.site/api/gostis', function (req, res) {
+      axios.get('https://anharrum.site/api/gostis', function (req, res) {
         res.set('Access-Control-Allow-Origin', '*')
       })
         .then(response => {
@@ -95,7 +95,7 @@ export default {
         })
     },
     deletMezgorod (id) {
-      axios.delete(`http://anharrum.site/api/gostis/${id}`)
+      axios.delete(`https://anharrum.site/api/gostis/${id}`)
         .then(res => {
           console.log('Deleted')
           this.fetch()

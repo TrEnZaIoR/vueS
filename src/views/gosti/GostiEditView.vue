@@ -79,7 +79,7 @@ export default {
   created () {},
   methods: {
     fetch () {
-      axios.get('http://anharrum.site/api/gostis/' + this.$route.params.id)
+      axios.get('https://anharrum.site/api/gostis/' + this.$route.params.id)
         .then(response => {
           console.log('+++ updated +++')
           this.gosti = response.data.values.rows[0]
@@ -90,7 +90,7 @@ export default {
         })
     },
     EditGosti () {
-      axios.put('http://anharrum.site/api/gostis/' + this.$route.params.id, this.gosti)
+      axios.put('https://anharrum.site/api/gostis/' + this.$route.params.id, this.gosti)
         .then(response => {
           console.log(response)
           console.log('+++ getID +++')

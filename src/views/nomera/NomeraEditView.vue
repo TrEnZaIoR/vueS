@@ -80,7 +80,7 @@ export default {
   created () {},
   methods: {
     fetch () {
-      axios.get('http://anharrum.site/api/nomera/' + this.$route.params.id)
+      axios.get('https://anharrum.site/api/nomera/' + this.$route.params.id)
         .then(response => {
           console.log('+++ updated +++')
           this.nomera = response.data.values.rows[0]
@@ -91,7 +91,7 @@ export default {
         })
     },
     CreateNomera () {
-      axios.put('http://anharrum.site/api/nomera/' + this.$route.params.id, this.nomera)
+      axios.put('https://anharrum.site/api/nomera/' + this.$route.params.id, this.nomera)
         .then(response => {
           console.log(response)
           console.log('+++ getID +++')

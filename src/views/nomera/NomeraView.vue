@@ -82,7 +82,7 @@ export default {
   },
   methods: {
     fetch () {
-      axios.get('http://anharrum.site/api/nomera', function (req, res) {
+      axios.get('https://anharrum.site/api/nomera', function (req, res) {
         res.set('Access-Control-Allow-Origin', '*')
       })
         .then(response => {
@@ -95,7 +95,7 @@ export default {
         })
     },
     deletNomera (id) {
-      axios.delete(`http://anharrum.site/api/nomera/${id}`)
+      axios.delete(`https://anharrum.site/api/nomera/${id}`)
         .then(res => {
           console.log('Deleted')
           this.fetch()

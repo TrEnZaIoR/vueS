@@ -78,7 +78,7 @@ export default {
   created () { },
   methods: {
     CreateGosti () {
-      axios.post('http://anharrum.site/api/gostis', this.gosti)
+      axios.post('https://anharrum.site/api/gostis', this.gosti)
         .then(response => {
           console.log(response)
           console.log('+++ SUCCESS +++')

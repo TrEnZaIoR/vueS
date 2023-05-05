@@ -90,7 +90,7 @@ export default {
   },
   methods: {
     fetch () {
-      axios.get('http://anharrum.site/api/gostis/' + this.$route.params.id)
+      axios.get('https://anharrum.site/api/gostis/' + this.$route.params.id)
         .then(response => {
           console.log('+++ SUCCESS +++')
           this.gosti = response.data.values.rows
@@ -101,7 +101,7 @@ export default {
         })
     },
     deletGosti (id) {
-      axios.delete(`http://anharrum.site/api/gostis/${id}`)
+      axios.delete(`https://anharrum.site/api/gostis/${id}`)
         .then(res => {
           console.log('Deleted')
           this.fetch()

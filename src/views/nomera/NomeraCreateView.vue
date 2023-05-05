@@ -78,7 +78,7 @@ export default {
   created () { },
   methods: {
     CreateNomera () {
-      axios.post('http://anharrum.site/api/nomera', this.nomera)
+      axios.post('https://anharrum.site/api/nomera', this.nomera)
         .then(response => {
           console.log(response)
           console.log('+++ SUCCESS +++')
